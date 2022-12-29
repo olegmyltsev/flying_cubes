@@ -5,7 +5,7 @@ let clicks = 0
 
 
 function click() {
-    let randomLeft = Math.floor(Math.random() * 1700)
+    let randomLeft = Math.floor(Math.random() * 1200)
     let randomTop = Math.floor(Math.random() * 600)
     clicks++
     $(".lll").css("margin-left", randomLeft).css("margin-top", randomTop)
