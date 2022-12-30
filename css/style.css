@@ -8,6 +8,15 @@
     font-family: Azov;
 }
 
+h1{
+    display: block;
+}
+
+.wrapper{
+    display: inline-block;
+    position: relative;
+}
+
 
 
 body {
@@ -17,9 +26,9 @@ body {
 
 .lll {
     display: inline;
-    position: fixed;
-    height: 200px;
-    width: 200px;
+    position: absolute;
+    height: 300px;
+    width: 300px;
     transition: 1s;
 }
 
@@ -70,8 +79,58 @@ div {
 
 }
 
+.dispersion1 {
+    top: 0;
+    left: 0;
+}
+
+.dispersion2 {
+    top: 0;
+    left: 200px;
+}
+
+.dispersion3 {
+    top: 200px;
+    left: 0;
+}
+
+.dispersion4 {
+    top: 200px;
+    left: 200px;
+}
+
 .many {
     position: relative;
+}
+
+
+@media (max-width: 500px) {
+    div {
+        height: 50px;
+        width: 50px;
+        font-size: 10px;
+        line-height: 50px;
+    }
+
+    .dispersion1 {
+        top: 0;
+        left: 0;
+    }
+
+    .dispersion2 {
+        top: 0;
+        left: 100px;
+    }
+
+    .dispersion3 {
+        top: 100px;
+        left: 0;
+    }
+
+    .dispersion4 {
+        top: 100px;
+        left: 100px;
+    }
 }
 
 .margin10 {
@@ -96,5 +155,4 @@ div {
     z-index: 5;
     top: 40px;
     left: 40px;
-    transition: 0s;
 }
