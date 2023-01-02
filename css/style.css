@@ -6,6 +6,7 @@
 * {
     margin: 0;
     font-family: Azov;
+    user-select: none;
 }
 
 h1{
@@ -20,7 +21,7 @@ h1{
 
 
 body {
-    background-color: rgb(0, 179, 255);
+    background-color: rgb(97, 208, 255);
 
 }
 
@@ -29,7 +30,7 @@ body {
     position: absolute;
     height: 300px;
     width: 300px;
-    transition: 1s;
+    transition: 2s;
 }
 
 div {
@@ -37,7 +38,7 @@ div {
     height: 100px;
     width: 100px;
     border-radius: 10px;
-    transition: 0.5s;
+    transition: top 0.5s, background 2s, left 1s;
     text-align: center;
     font-size: 20px;
     line-height: 100px;
@@ -49,7 +50,7 @@ div {
 
 
 .a {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(0, 255, 242);
     top: 10px;
     left: 10px;
     z-index: 1;
@@ -57,26 +58,25 @@ div {
 
 .b {
     background-color: rgb(9, 255, 0);
-    top: 20px;
-    left: 20px;
+    top: 10px;
+    left: 10px;
     z-index: 2;
 
 }
 
 .c {
-    background-color: rgb(25, 0, 255);
-    top: 30px;
-    left: 30px;
+    background-color: rgb(222, 105, 47);
+    top: 10px;
+    left: 10px;
     z-index: 3;
 
 }
 
 .d {
     background-color: rgb(255, 242, 0);
-    top: 40px;
-    left: 40px;
+    top: 10px;
+    left: 10px;
     z-index: 4;
-
 }
 
 .dispersion1 {
@@ -141,18 +141,18 @@ div {
 
 .margin20 {
     z-index: 2;
-    top: 20px;
-    left: 20px;
+    top: 10px;
+    left: 10px;
 }
 
 .margin30 {
     z-index: 3;
-    top: 30px;
-    left: 30px;
+    top: 10px;
+    left: 10px;
 }
 
 .margin40 {
     z-index: 5;
-    top: 40px;
-    left: 40px;
+    top: 10px;
+    left: 10px;
 }

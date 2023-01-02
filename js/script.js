@@ -1,25 +1,37 @@
-let clicks = 0
-let countClicks = 0
-
-
+const colors = ["rgb(0, 145, 255)", "rgb(255, 0, 0)", "rgb(30, 255, 0)", "rgb(0, 255, 242)"]
 const heightCheck = $(window).height();
 const widthCheck = $(window).width();
+
+let clicks = 0
+let countClicks = 0
 let height = 0
 let width = 0
 
-if (widthCheck < 500){
+
+
+
+
+
+
+if (widthCheck < 500) {
     height = heightCheck - 150
     width = widthCheck - 150
 
 }
-else{
+else {
     height = heightCheck - 300
     width = widthCheck - 300
 }
 
-console.log(width)
-
-
+function colorChange() {
+    let randomBlue = Math.floor(Math.random() * 255)
+    let randomRed = Math.floor(Math.random() * 255)
+    let randomGreen = Math.floor(Math.random() * 255)
+    $(".a").css("background", "rgb(" + randomRed + "," + randomBlue + "," + randomGreen + ")")
+    $(".b").css("background", "rgb(" + randomGreen + "," + randomRed + "," + randomBlue + ")")
+    $(".c").css("background", "rgb(" + randomBlue + "," + randomGreen + "," + randomRed + ")")
+    $(".d").css("background", "rgb(" + randomRed + "," + randomGreen + "," + randomBlue + ")")
+}
 
 
 
@@ -56,15 +68,13 @@ function click() {
             $(".c").addClass("margin40")
             $(".d").addClass("margin10")
         }
-        else{
+        else {
             $(".a").addClass("margin10")
             $(".b").addClass("margin20")
             $(".c").addClass("margin30")
             $(".d").addClass("margin40")
         }
     }
-    
-    console.log(clicks)
 
     setTimeout(mix, 500)
     if (clicks > 3) {
@@ -72,7 +82,7 @@ function click() {
     }
 }
 
-function run() { click() }
+setInterval(colorChange, 1000)
+function runClick() { click() }
 
-
-$("div").click(run)
+$("div").click(runClick)
