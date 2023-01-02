@@ -76,7 +76,7 @@ function click() {
         }
     }
 
-    setTimeout(mix, 500)
+    setTimeout(mix, 800)
     if (clicks > 3) {
         clicks = 0
     }
